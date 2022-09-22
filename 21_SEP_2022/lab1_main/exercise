@@ -1,0 +1,10 @@
+Exercise:
+
+Create an EC2 instance in Ohio Region with below details:
+1) Create a VPC with your name
+2) Create a subnet as private-yourname under above VPC
+3) Create a keypair with yourname-21sep
+4) Create a Server under above VPC/Subnet and with above keypair
+5) Use variable for AMI and it must ask for AMI ID during the runtime
+6) Hardware should be defaulted to t2.micro but should be changeable by providing value as "t2.nano" under terraform.tfvars file
+7) Server name it should ask during the runtime

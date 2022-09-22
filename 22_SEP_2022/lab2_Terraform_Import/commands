@@ -1,0 +1,9 @@
+ Terraform can import existing infrastructure resources. This functionality allows you take resources you created by some other means and bring them under Terraform management.
+ 
+ terraform init
+ terraform plan
+ terraform import aws_instance.web i-0428261d9c6720810
+ terraform plan -target aws_instance.s1
+ terraform import aws_s3_bucket.b mohini-bucket-1234
+ terraform plan
+ terraform apply

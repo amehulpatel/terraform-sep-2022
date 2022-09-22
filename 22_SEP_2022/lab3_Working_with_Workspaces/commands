@@ -1,0 +1,37 @@
+WORKSPACE:
+
+In Terraform CLI, workspaces are separate instances of state data that can be used from the same working directory. 
+You can use workspaces to manage multiple non-overlapping groups of resources with the same configuration. Every initialized working directory has at least one workspace.
+Terraform starts with a single workspace named "default". This workspace is special both because it is the default and also because it cannot ever be deleted.
+
+
+terraform init
+terraform plan
+terraform apply
+terraform workspace list
+terraform workspace new prod
+terraform workspace list
+pwd
+ls -l
+terraform apply
+terraform apply -var-file=prod.tfvars
+terraform workspace list
+terraform workspace select default
+terraform workspace list
+terraform apply 
+terraform workspace new dev
+terraform workspace list
+terraform apply 
+terraform destroy
+terraform workspace select default
+terraform destroy -auto-approve
+terraform workspace delete dev
+terraform workspace delete prod
+terraform workspace delete prod -force
+terraform workspace help
+terraform workspace new dev
+terraform plan
+terraform workspace delete prod
+terraform workspace delete default
+terraform workspace select default
+terraform workspace delete -force dev
